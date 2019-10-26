@@ -1878,12 +1878,15 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
+		margin: 0 0 0em 0;
+	/*	padding-left: 1em;*/
 	}
 
 		ul li {
-			padding-left: 0.5em;
+		
+			list-style-type: none;
+			
+
 		}
 
 		ul.alt {
@@ -1893,7 +1896,7 @@ input, select, textarea {
 
 			ul.alt li {
 				border-top: solid 1px #c9c9c9;
-				padding: 0.5em 0;
+				/*padding: 0.5em 0;*/
 			}
 
 				ul.alt li:first-child {
@@ -2774,7 +2777,7 @@ input, select, textarea {
 			}
 
 				.tiles article {
-					width: calc(33.33333% - 1.25em);
+					width: calc(23.33333% - 1.25em);
 					margin: 1.25em 0 0 1.25em;
 				}
 
@@ -2829,7 +2832,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 10px 0 0.1em 0 ;
 	}
 
 		#header .logo {

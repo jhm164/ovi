@@ -1,0 +1,43 @@
+
+1)
+
+  DELIMITER $$
+
+ CREATE PROCEDURE `check_maincategory` (IN `name1` VARCHAR(255))
+ begin
+   IF EXISTS (select * from maincategory where name = name1) THEN
+    select 'email exist';
+   ELSE 
+   INSERT INTO `maincategory` (`cat1_id`, `id`, `name`) VALUES ("", null,name1 );
+
+  END IF;
+ end$$
+
+ DELIMITER ;
+
+
+
+
+
+
+
+
+ 2)
+
+
+SELECT * FROM `allservices` WHERE maincategory LIKE '%s%' or subcategory LIKE '%s%'  or description LIKE '%s%' 
+
+
+
+
+3)
+
+
+decent sea green:  #38af6d
+dark shade: #023a1b
+
+
+
+
+4)
+SELECT maincategory, COUNT(*) AS `num` FROM allservices GROUP BY maincategory,subcategory
