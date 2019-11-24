@@ -199,8 +199,8 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 1.5;
 		margin: 0 0 2em 0;
-		text-transform: uppercase;
-		letter-spacing: 0.35em;
+		
+		letter-spacing: 0em;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2058,7 +2058,7 @@ input, select, textarea {
 
 	form {
 		margin: 0 0 2em 0;
-		overflow-x: hidden;
+		/*overflow-x: hidden;*/
 	}
 
 		form > :last-child {
@@ -2571,13 +2571,43 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		postiion: relative;
+		-moz-flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		 position: relative; 
+		/*overflow-x: scroll;
+		overflow-y: hidden;*/
 		margin: -2.5em 0 0 -2.5em;
+	
+		 
+  
 	}
+
+
+
+
+
+
+	.tiles::-webkit-scrollbar {
+		width: 0.2em;
+	}
+	 
+	.tiles::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+	 
+	.tiles::-webkit-scrollbar-thumb {
+	  background-color: darkgrey;
+	  outline: 1px solid slategrey;
+	}
+
+
+
+
+
+
+
 
 		.tiles article {
 			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
@@ -2585,8 +2615,14 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
-			margin: 2.5em 0 0 2.5em;
+			min-width: calc(26.33333% - 2.5em);
+			margin: 1em 0 0 1em;
+			width: 267px;
+
+			  
+
+
+
 		}
 
 			.tiles article > .image {
@@ -2637,7 +2673,7 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+					/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E"); */
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2729,7 +2765,7 @@ input, select, textarea {
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #37f356;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -2858,8 +2894,10 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 2em;
-					height: 2em;
+					top:0;
+	height: 110px;
+	width: 150px;
+	
 				}
 
 		#header nav {
@@ -3168,7 +3206,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 2em 0 6em 0 ;
 		background-color: #f6f6f6;
 	}
 
@@ -3296,8 +3334,16 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			#header .logo .symbol img {
+				
+height: 70px;
+width: 90px;
+
+			}
+
 			#footer > .inner .copyright {
 				margin-top: 3em;
+				text-align: center;
 			}
 
 				#footer > .inner .copyright li {

@@ -82,6 +82,7 @@ $(document).on("click",".list-group-item",function(){
 
 
   $("#searchbox").on("keyup", function() {
+  	alert("hello")
   	$("#myList").css({"visibility":"visible"});
     var value = $(this).val().toLowerCase();
     $("#myList li").filter(function() {
@@ -673,7 +674,7 @@ $(document).on("click",".list-group-item",function(){
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-		
+	
    
 <link rel="stylesheet" href="assets/css/searchbox.css" />
 	

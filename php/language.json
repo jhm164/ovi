@@ -1,0 +1,20 @@
+[{
+"eng":
+{
+"welcome":"Welcome to OVI",
+"home":"home",
+"aboutus":"About Us",
+"search":"search service here",
+"menu":"menu"
+
+}
+,
+"hindi":
+{
+"welcome":"OVI में आपका स्वागत है",
+"home":"होम",
+"aboutus":"हमारे बारे में",
+"search":"सेवा के लिए खोज",
+"menu":"मेन्यू"
+}
+}]
